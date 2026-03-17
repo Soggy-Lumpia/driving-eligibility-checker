@@ -72,7 +72,7 @@ def checkUserAge(age) -> bool:
 
 
 
-
+#                      !!Initial PseudoCode!!
 
 
     # if input == integer
@@ -88,35 +88,6 @@ def checkUserAge(age) -> bool:
         #   omit any other type of input (including ASCII characs)
 
     # return INT ONLY
-
-
-
-
-
-#     print(f"getAge_type:{type(getAge)}\n")
-#     validAge = True
-
-#     if getAge < 18:
-#         validAge = False
-
-#         print("You are not eligible to drive yet!\n")
-#         return validAge
-
-#     elif getAge >= 18:
-#         print("You are old enough to drive!\n")
-#         validAge = True
-
-#     elif getAge is type(str):
-
-#         if validAge == True:
-#             return True
-
-#     if validAge == False:
-#         print("Need a driving age!\n")
-#         return validAge
-
-#     else:
-#         print("else condition: validAge == True")
 
 
 
