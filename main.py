@@ -2,11 +2,9 @@ import colorama
 
 
 def askUserAge() -> int:
-    getAge = int(input("What is your age?:"))
-    # Get variable data type
+    getAge = int(input("What is your age?:"))    # Get variable data type -- DEBUG   
     print(f"getAge data type: {type(getAge)}\n")
     # initialization
-    validAge = False
     agePass = getAge
     
     # First successful User-Case
@@ -22,6 +20,9 @@ def askUserAge() -> int:
 def checkUserAge(age) -> bool: 
         
         age = askUserAge()
+        validAge = True
+        invalidAge = False
+        
         while age >= 18:
             
             # Ask User if they want a valid driver's license
@@ -29,20 +30,26 @@ def checkUserAge(age) -> bool:
             break;
             
             if askDL == 'Y' or  askDL == 'y' or askDL == 'Yes' or askDL == "yes" or askDL == "yEs" or askDL == "yeS" or askDL == "yES" or askDL == "YES":
-                print("Yes condition!")
+                print("Yes condition!\n")
                 break;
                 
             elif askDL == 'N' or askDL == 'n' or askDL == "No" or askDL == "no" or askDL == "nO" or askDL == "NO":
-                print("No conditon!")
+                print("No conditon!\n")
                 break;
+            else:
+                print("This is a valid age!\n")
+                return validAge
                 
         # emulate do-while loop
         while age < 18:
-            age == getAgeDataType
-            if (age < 18 or getAgeDataType != type(INT)):
+            invalidAge = False
+            if (age < 18 and invalidAge == False ):
                 print(f"You need to be 18 years or older to apply!\n")
-            else:
                 break;
+                
+            else:
+                print(f"{invalidAge}")
+                return invalidAge
             
 
         
